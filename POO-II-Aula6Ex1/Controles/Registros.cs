@@ -99,7 +99,7 @@ namespace POO_II_Aula6Ex1.Controles
 
                 Console.Write($"Significado {cont}: ");
                 significado = Console.ReadLine();
-                if (significado != "FIM")
+                if (significado != "FIM" && !String.IsNullOrEmpty(significado))
                 {
                     do
                     {
@@ -149,13 +149,11 @@ namespace POO_II_Aula6Ex1.Controles
                 else
                 {
                     Console.WriteLine("Operação cancelada!");
-
                 }
             }
             else
             {
                 Console.WriteLine("Operação cancelada. Nenhum significado para o termo foi digitado.");
-                Console.WriteLine("Pressione qualquer tecla para voltar ao menu.");
             }
             Console.WriteLine("Pressione qualquer tecla para voltar ao menu.");
             Console.ReadKey(true);
